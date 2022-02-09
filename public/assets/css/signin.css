@@ -1,0 +1,101 @@
+
+@keyframes slide{
+  0% {
+      transform: translatey(100px);
+  }
+  100% {
+      transform: translatey(0);
+  }
+}
+.card{
+  animation: slide 1s;
+}
+.contact{
+  padding: 1%;
+  height: 400px;
+  animation: slide .8s;
+  width: 90%;
+
+}
+.col-md-3{
+  background: #ff9b00;
+  padding: 4%;
+  border-top-left-radius: 3.5rem;
+  border: 2px solid black;
+  border-right: 0;
+
+}
+.bottom{
+  display:flex;
+}
+.contact-info{
+  margin-top:10%;
+}
+.contact-info img{
+  margin-bottom: 10%;
+}
+.contact-info h4{
+  margin-bottom: 10%;
+  font-weight: lighter;
+}
+.col-md-9{
+  background: #fff;
+  padding: 3%;
+  border-bottom-right-radius: 3.5rem;
+  border: 2px black solid;
+  border-left: 0;
+}
+.contact-form > label{
+  font-weight:600;
+  text-align: left;
+  margin: 1%;
+}
+#add{
+  color: #fff;
+  font-weight: 600;
+  width: 70%;
+}
+#adds{
+  color: #fff;
+  font-weight: 600;
+  width: 70%;
+  margin-left: 1%;
+
+}
+#cancel{
+  width: 20%;
+}
+.flex-row-reverse{
+  width: fit-content;
+}
+@media screen and (max-width: 767px) {
+  .col-md-9{
+      border-bottom-right-radius: 3.5rem;
+      border-top-right-radius: 0;
+      border: 2px solid black;
+      border-top: 0;
+  }
+  .col-md-3{
+      border-top-left-radius: 3.5rem;
+      border-bottom-left-radius: 0;
+      border: 2px solid black;
+      border-bottom: 0;
+  }
+  #add{
+      width: 100%;
+      border-bottom-right-radius: 3.5rem;
+  }
+  #adds{
+    margin-left: 4%;
+    width: 60%;
+  }
+  #cancel{
+    border-bottom-right-radius: 3.5rem;
+    width: 35%;
+    
+  }
+  img{
+      height: 100%;
+      width: 50%;
+  }
+}
